@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.5">
     <title>Pokemon Clicker Game</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
     <!-- FontAwesome подключен неправильно -->
 </head>
 <body>
@@ -33,7 +32,7 @@
             <section class="pokemon-display">
                 <div class="image-frame">
                     <!-- Неправильный путь к изображению -->
-                    <img src="./pokemons/first.png" alt="Покемон" class="pokemon-image" id="main-pokemon">
+                    <img src="dj2-main/images/1.png" alt="Покемон" class="pokemon-image" id="main-pokemon">
                 </div>
                 <div class="pokemon-info">
                     <h3 id="pokemon-name">Загрузка...</h3>
@@ -53,10 +52,10 @@
                     </p>
                 </div>
 
-                <div class="progress-section">
+                <!-- <div class="progress-section">
                     <h4>Прогресс до следующего покемона:</h4>
-                    <!-- Прогресс-бар сломан -->
-                    <div class="progress-container">
+                    <! Прогресс-бар сломан -->
+                    <!-- <div class="progress-container">
                         <div class="progress-track">
                             <div class="progress-fill" style="width: 0%"></div>
                         </div>
@@ -65,16 +64,27 @@
                     <p class="progress-info" id="progress-info">
                         0 из 100 очков
                     </p>
+                </div> --> 
+
+                <div class="progress-section">
+                    <div class="progress-container">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
+                    <div class="progress-text" id="progress-text">0%</div>
                 </div>
             </section>
         </main>
 
-        <footer class="game-footer">
-            <!-- Пустой футер -->
-        </footer>
+        <!-- <footer class="game-footer">
+            Пустой футер -->
+        <!-- </footer> -->
+
+
+        <div class="game-footer">
+            <button id="click-button">нажимай</button>
+        </div>
     </div>
-    
-    <script src="sound-generator.js"></script>
+
     <script src="script.js"></script>
 </body>
 </html>
